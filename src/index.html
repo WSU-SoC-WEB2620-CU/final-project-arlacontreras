@@ -1,16 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Designs by Ava</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Project Starter</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./stylesheets/main.scss">
-</head>
+  <body>
+    <!--  Your HTML goes here-->
+    <header>
+      <!-- navigation -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- end navigation -->
+      <!-- hero banner -->
+      <div class="container-fluid text-white">
+        <div class="heroImageContainer" style="background-image: url('./images/home/heroimage.jpg')">
+          <h1 class="display-2 text-center">Designs by Ava</h1>
+          <p class="lead text-center">Making your interior dreams a reality!</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h2>Latest from Ava</h2>
+      <!-- card 1, 2, 3 -->
+      <section>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="images/home/heroimage.jpg" class="card-img-top round-image" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Park City, UT</h5>
+                <p>View my latest project in Park City for a dear friend. Such a wonderful place this time of year!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="images/home/heroimage.jpg"
+                class="card-img-top round-image"
+                alt="Brown and white living room with leather sofa "
+              />
+              <div class="card-body">
+                <h5 class="card-title">Design Inspo: Couches & Sofas</h5>
+                <p class="card-text">
+                  From neutral to vivid pops of color, deciding what sofa fits your needs has never been more difficult!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/home/heroimage.jpg" class="card-img-top round-image" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">This Just In: Cozy, Cozy, Cozy!</h5>
+                <p class="card-text">
+                  Want to stay up to date on the latest interior design trends? Cozy and warm is the latest in interior
+                  design!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end card 1, 2, 3 -->
+    </main>
 
-<body>
-  <!--  Your HTML goes here-->
-  <h1>Welcome to WEB 2620!!!!!</h1>
-<script type="module" src="./javascripts/main.js"></script>
-</body>
+    <footer></footer>
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
 </html>

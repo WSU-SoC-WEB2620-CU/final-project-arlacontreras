@@ -1,1 +1,42 @@
 // Your styles go here
+/* import declarations */
+// Override theme colors in Bootstrap to the values needed in the site
+@import "node_modules/bootstrap/scss/bootstrap";
+/*Variables*/
+$text-align: center;
+$primary: yellow;
+
+
+/* overriding Bootstrap elements to fit design */
+#navbarNav{
+  justify-content: space-around;
+}
+
+
+/* elements not linked with Bootstrap*/
+main {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.heroImageContainer {
+  max-width: 100%;
+  height: 150px;
+  background-color: beige;
+}
+
+/* Tablet */
+@include media-breakpoint-up(md) {
+  .heroImageContainer {
+    height: 200px;
+  }
+}
+/* Desktop */
+@include media-breakpoint-up(lg) {
+  main {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .heroImageContainer {
+    height: 400px;
+  }
+}
