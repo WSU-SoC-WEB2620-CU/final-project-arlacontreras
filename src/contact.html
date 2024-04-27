@@ -1,16 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Contact</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./stylesheets/main.scss">
-</head>
+  <body>
+    <header>
+      <!-- navigation -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- end navigation -->
+    </header>
+    <br />
+    <main>
+      <div class="row">
+        <div class="col">
+          <h1>Contact us today!</h1>
 
-<body>
-  <!--  Your HTML goes here-->
-  <h1>Contact - Designs by Ava</h1>
-<script type="module" src="./javascripts/main.js"></script>
-</body>
+          <div class="mb-3">
+            <label for="name" class="form-label">name</label>
+            <input type="name" class="form-control" id="name" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">email</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">phone (optional)</label>
+            <input type="phone" class="form-control" id="phone" />
+          </div>
+          <!-- Large button groups (default and split) -->
+          <div class="btn-group">
+            <button
+              class="btn btn-secondary btn-lg dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Reason for Contact
+            </button>
+            <ul class="dropdown-menu">
+              <li>Consultation</li>
+              <li>Design Package</li>
+              <li>Blog Reply</li>
+              <li>Blog Request</li>
+            </ul>
+          </div>
+          <div class="mb-3">
+            <label for="inquiry" class="form-label">inquiry</label>
+            <textarea class="form-control" id="inquiry" rows="3"></textarea>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Submit!</a>
+          <br /><br />
+          <p>Looking forward to hearing from you! :D</p>
+        </div>
+        <div class="col-6">
+          <img src="images/hero6.jpg" id="contactImg" alt="White and wood living room with fireplace" />
+        </div>
+      </div>
+    </main>
+    <footer class="bg-dark">
+      <nav class="navbar navbar-expand-md navbar-light bg-dark">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="footerNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-secondary" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="https://www.facebook.com/">Facebook</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="https://www.instagram.com/">Instagram</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="https://twitter.com/">X</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </footer>
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
 </html>

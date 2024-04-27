@@ -1,5 +1,3 @@
-// Your styles go here
-/* import declarations */
 // Override theme colors in Bootstrap to the values needed in the site
 /*Variables*/
 $primary: #ccd5ae;
@@ -8,13 +6,22 @@ $success: #d4a373;
 $info: #ccd5ae;
 $light: #fefae0;
 @import "node_modules/bootstrap/scss/bootstrap";
-
+@import "@fortawesome/fontawesome-free/css/all.css";
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Syne:wght@400..800&display=swap");
 /* overriding Bootstrap elements to fit design */
+h1, h2, h3, h4, h5, nav, footer {
+  font-family: "Syne", sans-serif;
+}
+p, a {
+  font-family: "Inter", sans-serif;
+}
 #navbarNav {
   justify-content: space-around;
 }
-
-/* elements not linked with Bootstrap*/
+#footerNav {
+  justify-content: flex-end;
+}
 nav {
   color: $light;
 }
@@ -27,6 +34,12 @@ main {
   height: 150px;
   background-color: beige;
 }
+.roundedImg {
+  border-radius: 100px;
+}
+#contactImg {
+  display: none;
+}
 
 /* Tablet */
 @include media-breakpoint-up(md) {
@@ -38,5 +51,12 @@ main {
 @include media-breakpoint-up(lg) {
   .heroImageContainer {
     height: 300px;
+  }
+  main {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+  #contactImg {
+    display: flex;
   }
 }

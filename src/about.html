@@ -5,6 +5,12 @@
     <title>About</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./stylesheets/services.scss" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -26,7 +32,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -38,7 +44,7 @@
                 <a class="nav-link" href="blog.html">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link active" href="about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
@@ -52,7 +58,6 @@
     <!-- horizontal lines to break whitespace + header -->
     <div class="row">
       <div class="col-4"><h1>About Ava</h1></div>
-
       <div class="col">
         <hr />
         <hr />
@@ -71,11 +76,32 @@
           </p>
         </div>
         <div class="col-md-4">
-          <img src="images/services/3dsample.jpg" width="300px" alt="insert sample 3d rendering here" />
+          <img src="images/avaPortrait.jpg" width="350px" alt="portrait of Ava Coleman with her dog, Scoot" />
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer class="bg-dark">
+      <nav class="navbar navbar-expand-md navbar-light bg-dark">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="footerNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-secondary" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="https://www.facebook.com/">Facebook</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="https://www.instagram.com/">Instagram</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="https://twitter.com/">X</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </footer>
     <script type="module" src="./javascripts/main.js"></script>
   </body>
 </html>
