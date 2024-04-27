@@ -4,33 +4,97 @@
     <meta charset="utf-8" />
     <title>Services</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./stylesheets/main.scss" />
+    <link rel="stylesheet" href="./stylesheets/services.scss" />
   </head>
 
   <body>
-    <!--  Your HTML goes here-->
-    <h1>Services - Designs by Ava</h1>
     <header>
-      <nav>
-        <ul class="navigation">
-          <li>Home</li>
-          <li>Portfolio</li>
-          <li>Blog</li>
-          <li>Services</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
+      <!-- navigation -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <h1>Services</h1>
-      <img src="" alt="" />
+      <!-- end navigation -->
     </header>
-    <main>
-      <h2>Services Offered:</h2>
-      <h4>Our team will be happy to assist with what you need to make your interior dreams come true!</h4>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus laudantium, porro molestias impedit, dolor dolores quaerat voluptatum eligendi consectetur cupiditate reprehenderit pariatur laborum rem ducimus dolorem, eveniet aperiam officia adipisci.</p>
-      <div>
-        <img src="" alt="">
+    <!-- hero image -->
+    <div class="container text-white">
+      <div class="heroImageContainer" style="background-image: url('./images/home/heroimage.jpg')">
+        <h1 class="display-2 text-center align-middle">Services</h1>
+        <p class="lead text-center">Let me help you!</p>
       </div>
+    </div>
+    <!-- end hero image -->
+    <br />
+    <main>
+      <h2 class="text-center">Services Offered:</h2>
+      <p class="text-center">
+        Our team will be happy to assist with what you need to make your interior dreams come true! We offer different
+        packages that can be custom tailored to suit your needs! Our team is equipped with the knowledge and expertise
+        to capture your essence, without having to make sacrifices.
+      </p>
+      <!-- list of services -->
+      <div class="row">
+        <div class="col-md">
+          <ul>
+            <li>
+              Want to freshen up your space? We offer simple packages that focus on what you have, while attaining the
+              vision that you have. Simple moodboards, virtual consultations, and an in-home visit are available!
+            </li>
+            <br />
+            <li>
+              Thinking about revamping your home? Our specialty! We offer detailed moodboards, floor plans, sample
+              boards, and in-person visits and walkthroughs, as well as get an exclusive one-on-one consultation with
+              our top designer, Ava!
+            </li>
+            <br />
+            <li>
+              An entire makeover? Say no more! These packages contain extensive samples and consultations to be with you
+              every step of the way. We can provide expertise from our designers, architect, and contractors to ensure
+              that your space is YOURS!
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Contact Us!</a>
+        </div>
+        <div class="col-md-4">
+          <img src="images/services/3dsample.jpg" width="300px" alt="insert sample 3d rendering here" />
+        </div>
+      </div>
+
+      <!-- end list group -->
+      <!-- image -->
     </main>
     <footer></footer>
     <script type="module" src="./javascripts/main.js"></script>

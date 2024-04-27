@@ -1,0 +1,25 @@
+@import "main.scss";
+
+main {
+  padding: 20px 50px;
+}
+
+/* Tablet */
+@include media-breakpoint-up(md) {
+}
+/* Desktop */
+@include media-breakpoint-up(lg) {
+  main {
+    padding: 20px 90px;
+  }
+}
+
+// portfolio.html
+section {
+  margin: 20px;
+  font-size: 16px;
+}
+
+img {
+  border-radius: 50px;
+}

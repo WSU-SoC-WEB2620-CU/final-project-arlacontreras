@@ -1,16 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blog - Designs by Ava</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Blog - Designs by Ava</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./stylesheets/main.scss">
-</head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navigation -->
+    <main>
+      <!-- horizontal lines to break whitespace + header -->
+      <div class="row">
+        <div class="col-4"><h1>Ava's Projects</h1></div>
 
-<body>
-  <!--  Your HTML goes here-->
-  <h1> Blog - Designs by Ava</h1>
-<script type="module" src="./javascripts/main.js"></script>
-</body>
+        <div class="col">
+          <hr />
+          <hr />
+        </div>
+      </div>
+      <!-- blog article -->
+      <section>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card border-0">
+              <div class="row card-body">
+                <img class="col-sm-6" src="images/home/heroimage.jpg" alt="sans" />
+                <div class="col-sm-6">
+                  <h5 class="card-title">Design Inspo: Sofas</h5>
+                  <p class="subtext">So cool!</p>
+                  <p class="card-text">
+                    Thinking about upgrading your living space? A sofa is a great way to spruce it up! There are a
+                    multitude of different materials, textures, and designs that can be combined to create a beautiful
+                    focal point in your home.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card border-0">
+              <div class="row card-body">
+                <img class="col-sm-6" src="images/home/heroimage.jpg" alt="sans" />
+                <div class="col-sm-6">
+                  <h5 class="card-title">This Just In: Cozy, Cozy, Cozy!</h5>
+                  <p class="subtext">So comfy!</p>
+                  <p class="card-text">
+                    One thing that has been popping up in consultations and walkthroughs is comfort. Many people have
+                    started to make their spaces a little less showy, and more lived in and my, is it amazing!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
 </html>

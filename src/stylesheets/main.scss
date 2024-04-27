@@ -1,19 +1,23 @@
 // Your styles go here
 /* import declarations */
 // Override theme colors in Bootstrap to the values needed in the site
-@import "node_modules/bootstrap/scss/bootstrap";
 /*Variables*/
-$text-align: center;
-$primary: yellow;
-
+$primary: #ccd5ae;
+$secondary: #e9edc9;
+$success: #d4a373;
+$info: #ccd5ae;
+$light: #fefae0;
+@import "node_modules/bootstrap/scss/bootstrap";
 
 /* overriding Bootstrap elements to fit design */
-#navbarNav{
+#navbarNav {
   justify-content: space-around;
 }
 
-
 /* elements not linked with Bootstrap*/
+nav {
+  color: $light;
+}
 main {
   padding-right: 30px;
   padding-left: 30px;
@@ -32,11 +36,7 @@ main {
 }
 /* Desktop */
 @include media-breakpoint-up(lg) {
-  main {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
   .heroImageContainer {
-    height: 400px;
+    height: 300px;
   }
 }

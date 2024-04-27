@@ -1,16 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./stylesheets/services.scss" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./stylesheets/main.scss">
-</head>
-
-<body>
-  <!--  Your HTML goes here-->
-  <h1>Portfolio - Designs by Ava</h1>
-<script type="module" src="./javascripts/main.js"></script>
-</body>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navigation -->
+    <main>
+      <!-- horizontal lines to break whitespace + header -->
+      <div class="row">
+        <div class="col">
+          <hr />
+          <hr />
+        </div>
+        <div class="col-4"><h1>Ava's Projects</h1></div>
+      </div>
+      <!-- tabs to navigate to specific project -->
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#parkcity">Park City, UT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#slc">Salt Lake City, UT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ogden">Ogden, UT</a>
+        </li>
+      </ul>
+      <!-- portfolio/projects -->
+      <section>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card border-0">
+              <div class="row card-body">
+                <img class="col-sm-6" src="images/home/heroimage.jpg" alt="sans" />
+                <div class="col-sm-6">
+                  <h5 id="parkcity" class="card-title">Park City, UT</h5>
+                  <p class="card-text">
+                    This client was sought our services a space makeover to their new home in Utah. Over the course of
+                    three months, our team was able to design and implement their interior design goals derived from
+                    moodboards and walkthroughs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card border-0">
+              <div class="row card-body">
+                <div class="col-sm-6">
+                  <h5 id="slc" class="card-title">Salt Lake City, Utah</h5>
+                  <p class="card-text">
+                    This client requested our services for an entire kitchen remodel, drawing inspiration from current
+                    trends. The gold accents paired with the natural wood and white interior is modern, fresh, and
+                    clean!
+                  </p>
+                </div>
+                <img class="col-sm-6" src="images/home/heroimage.jpg" alt="sans" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="row">
+          <div class="col-sm">
+            <div class="card border-0">
+              <div class="row card-body">
+                <img class="col-sm-6" src="images/home/heroimage.jpg" alt="sans" />
+                <div class="col-sm-6">
+                  <h5 id="ogden" class="card-title">Ogden, Utah</h5>
+                  <p class="card-text">
+                    Coming to us with a bundle of ideas and nowehere to start, we heped in making this client's dream of
+                    a natural, cozy house a reality!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
 </html>
